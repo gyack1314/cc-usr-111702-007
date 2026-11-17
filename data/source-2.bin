@@ -1,0 +1,15 @@
+{
+  "code": "BX-1",
+  "page": 2,
+  "next": null,
+  "events": [
+    {
+      "event_id": "E-2",
+      "kind": "return",
+      "batch": "B-01",
+      "parent": "BOX-1",
+      "event_time": "2026-11-16T09:00:00Z",
+      "received_at": "2026-11-17T11:00:00Z"
+    }
+  ]
+}
