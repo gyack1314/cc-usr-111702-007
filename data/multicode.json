@@ -1,0 +1,59 @@
+{
+  "allowed_origins": [
+    "https://trace.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-1&page=1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 267,
+        "sha256": "3edd4ce70d69c5ecf377612e15426048fb3ff6ceeeb8b47cdafec96334a17e5b"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-1&page=2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-2.bin",
+        "status": 200,
+        "bytes": 265,
+        "sha256": "27108044cdacb875418eb6f3ca89b58cc90b9c099dd600c1dbf0115a7a3a582e"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-2&page=1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-bx2-1.bin",
+        "status": 200,
+        "bytes": 752,
+        "sha256": "e768994bb83cd2e39a076123d74f72e61af062babec9ba12a8768621f83f75bd"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-2&page=2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-bx2-2.bin",
+        "status": 200,
+        "bytes": 753,
+        "sha256": "4750eee76c7cf1458c52b9e466a47486428b5b18a3c0abcc0eec607dde15406d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "code": "BX-3",
+  "page": 2,
+  "next": null,
+  "events": [
+    {
+      "event_id": "BX3-E2",
+      "kind": "unpack",
+      "batch": "B-03",
+      "parent": "BOX-3",
+      "node": "N-WHOLESALE",
+      "event_time": "2026-11-14T10:00:00Z",
+      "received_at": "2026-11-17T12:00:00Z"
+    }
+  ]
+}

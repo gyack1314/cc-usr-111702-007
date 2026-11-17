@@ -1,0 +1,20 @@
+{
+  "allowed_origins": [
+    "https://trace.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-4&page=1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-bx4-bad.bin",
+        "status": 200,
+        "bytes": 49,
+        "sha256": "1723aebf58fb9a3d421f5b164ac7734c068c541f87da2a9e6e422552c390ea5c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "code": "BX-2",
+  "page": 2,
+  "next": null,
+  "events": [
+    {
+      "event_id": "BX2-E4",
+      "kind": "inbound",
+      "batch": "B-02",
+      "parent": "BOX-2",
+      "node": "N-CLINIC",
+      "event_time": "2026-11-15T15:00:00Z",
+      "received_at": "2026-11-16T10:00:00Z"
+    },
+    {
+      "event_id": "BX2-E5",
+      "kind": "return",
+      "batch": "B-02",
+      "parent": "BOX-2",
+      "node": "N-CLINIC",
+      "event_time": "2026-11-15T16:00:00Z",
+      "received_at": "2026-11-17T11:30:00Z"
+    },
+    {
+      "event_id": "BX2-E6",
+      "kind": "inbound",
+      "batch": "B-02",
+      "parent": "BOX-2",
+      "node": "N-WHOLESALE",
+      "event_time": "2026-11-15T18:00:00Z",
+      "received_at": "2026-11-17T11:31:00Z"
+    }
+  ]
+}

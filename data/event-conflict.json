@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://trace.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-5&page=1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-bx5-1.bin",
+        "status": 200,
+        "bytes": 297,
+        "sha256": "247a93c7ec0d15d635937c6172c7784a10e94121a842e503c76f59cea078bf2a"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://trace.example.test/events?code=BX-5&page=2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-bx5-2.bin",
+        "status": 200,
+        "bytes": 294,
+        "sha256": "6738c3903c6b61aac2118fa0bfc595cb7689827644eaf0bb635b1bb40abe7e90"
+      }
+    }
+  ]
+}

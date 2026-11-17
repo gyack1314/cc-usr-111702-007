@@ -18,6 +18,9 @@ class Replay:
         self.steps=document['steps']
         self.position=0
         self.history=[]
+    def origin_of(self, url):
+        """公开作用域解析，供收集器冻结续页请求的凭据范围。"""
+        return origin(url)
     def request(self, method, url, body=b'', credential_scope=''):
         if origin(url) not in self.allowed or credential_scope and credential_scope!=origin(url):
             raise ValueError('请求或凭据越界')
@@ -37,3 +40,15 @@ class Replay:
                  'credential_scope':credential_scope,'step':self.position}
         self.history.append(receipt)
         return raw,receipt
+    def find_step(self, method, url):
+        """按请求键定位冻结步骤，供分段恢复跳过已确认页面。
+
+        顺序请求仍用 request()；恢复时游标可能与磁带位置不同，
+        因此按 (method, url) 查找，并在找到后把位置推进到该步骤。
+        """
+        key=(method,url)
+        for index,row in enumerate(self.steps):
+            request=row['request']
+            if (request['method'],request['url'])==key:
+                return index
+        raise EOFError('冻结交互中没有该边界的响应: %s %s' % key)

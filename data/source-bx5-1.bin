@@ -1,0 +1,16 @@
+{
+  "code": "BX-5",
+  "page": 1,
+  "next": "page=2",
+  "events": [
+    {
+      "event_id": "BX5-E1",
+      "kind": "produce",
+      "batch": "B-05",
+      "parent": "BOX-5",
+      "node": "N-PROD",
+      "event_time": "2026-11-13T08:00:00Z",
+      "received_at": "2026-11-14T08:00:00Z"
+    }
+  ]
+}
